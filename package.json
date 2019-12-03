@@ -1,0 +1,37 @@
+{
+  "name": "okmemer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "dev:debug": "nodemon --inspect src/index.ts",
+    "deploy": "npm run build && gcloud app deploy --quiet ./app.yaml ./cron.yaml"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/logging-bunyan": "^2.0.0",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.12",
+    "commander": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "nodemon": "^2.0.1",
+    "qs": "^6.9.0",
+    "ts-node": "^8.5.4"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.6",
+    "@types/express": "^4.17.1",
+    "@types/lodash": "^4.14.144",
+    "@types/node": "^12.12.3",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
