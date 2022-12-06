@@ -23,7 +23,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "nodemon": "^2.0.1",
-    "qs": "^6.9.0",
+    "qs": "^6.9.7",
     "ts-node": "^8.5.4"
   },
   "devDependencies": {
